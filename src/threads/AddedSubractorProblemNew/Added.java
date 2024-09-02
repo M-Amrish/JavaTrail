@@ -1,4 +1,4 @@
-package threads.AddedSubractorProblem;
+package threads.AddedSubractorProblemNew;
 
 public class Added implements Runnable{
 
@@ -10,8 +10,8 @@ public class Added implements Runnable{
 
     @Override
     public void run() {
-        for(int i=0; i <10000; i++){
-            count.value += i;
+        for(int i=1; i <= 100; i++){
+            count.incrementValue(i);
         }
     }
 }
